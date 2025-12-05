@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kathleen Murphy | Metaphysical Wellness Specialist</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Official website of Kathleen Murphy, Metaphysical Wellness Specialist and author of essays on inner alignment, subtle energy, and practical spirituality.">
+
+  <!-- Simple 2019-style Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Open+Sans:300,400,600" rel="stylesheet">
+
+  <style>
+    /* Basic reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Open Sans", Arial, sans-serif;
+      background: #f5f5f5;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    a {
+      color: #3c6e71;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      background: #ffffff;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    .top-bar {
+      padding: 12px 0;
+      font-size: 13px;
+      color: #777;
+      text-align: right;
+    }
+
+    .site-header {
+      padding: 24px 0 18px 0;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .site-title {
+      font-family: "Lora", Georgia, serif;
+      font-size: 26px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #222;
+    }
+
+    .site-subtitle {
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: #999;
+      margin-top: 4px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 18px;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+
+    nav li {
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+
+    .hero {
+      background: #fdfdfd;
+      border-bottom: 1px solid #e5e5e5;
+      padding: 30px 0 26px 0;
+    }
+
+    .hero-inner {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      align-items: flex-start;
+    }
+
+    .hero-text {
+      flex: 1 1 260px;
+    }
+
+    .hero-title {
+      font-family: "Lora", Georgia, serif;
+      font-size: 28px;
+      margin-bottom: 12px;
+      color: #222;
+    }
+
+    .hero-lead {
+      font-size: 15px;
+      color: #555;
+      margin-bottom: 14px;
+    }
+
+    .hero-note {
+      font-size: 12px;
+      color: #888;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+    }
+
+    .hero-photo {
+      flex: 0 0 160px;
+      max-width: 180px;
+      text-align: center;
+      font-size: 12px;
+      color: #999;
+    }
+
+    .hero-photo-placeholder {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      background: #e0e0e0;
+      margin: 0 auto 8px auto;
+      border: 1px solid #d0d0d0;
+    }
+
+    main {
+      padding: 28px 0 40px 0;
+    }
+
+    section {
+      margin-bottom: 32px;
+    }
+
+    section h2 {
+      font-family: "Lora", Georgia, serif;
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: #222;
+    }
+
+    .section-intro {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 12px;
+    }
+
+    .essay-list {
+      list-style: none;
+      border-top: 1px solid #ddd;
+    }
+
+    .essay-item {
+      border-bottom: 1px solid #eee;
+      padding: 14px 0;
+    }
+
+    .essay-meta {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: #999;
+      margin-bottom: 4px;
+    }
+
+    .essay-title {
+      font-family: "Lora", Georgia, serif;
+      font-size: 17px;
+      margin-bottom: 4px;
+    }
+
+    .essay-summary {
+      font-size: 14px;
+      color: #555;
+      max-width: 720px;
+    }
+
+    .badge-external {
+      display: inline-block;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      border: 1px solid #ccc;
+      padding: 2px 6px;
+      border-radius: 2px;
+      margin-left: 6px;
+      color: #777;
+    }
+
+    .about-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      font-size: 14px;
+    }
+
+    .about-col {
+      flex: 1 1 260px;
+      color: #555;
+    }
+
+    .newsletter-box {
+      background: #ffffff;
+      border: 1px solid #e1e1e1;
+      padding: 14px 16px;
+      font-size: 13px;
+      margin-top: 8px;
+    }
+
+    .newsletter-box label {
+      display: block;
+      margin-bottom: 4px;
+      color: #555;
+    }
+
+    .newsletter-box input[type="email"] {
+      width: 100%;
+      padding: 7px 8px;
+      border: 1px solid #ccc;
+      border-radius: 2px;
+      font-size: 13px;
+      margin-bottom: 8px;
+    }
+
+    .newsletter-box button {
+      padding: 7px 16px;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      border: 1px solid #3c6e71;
+      background: #3c6e71;
+      color: #fff;
+      border-radius: 2px;
+      cursor: pointer;
+    }
+
+    .newsletter-box button:hover {
+      opacity: 0.9;
+    }
+
+    footer {
+      border-top: 1px solid #ddd;
+      padding: 14px 0 26px 0;
+      font-size: 11px;
+      color: #888;
+      background: #fafafa;
+    }
+
+    footer .footer-inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    footer a {
+      color: #666;
+    }
+
+    @media (max-width: 700px) {
+      nav ul {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+      }
+      .top-bar {
+        text-align: left;
+      }
+      .hero-inner {
+        flex-direction: column-reverse;
+      }
+      .hero-photo {
+        align-self: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="top-bar container">
+    Selected writings on inner alignment &amp; metaphysical wellness
+  </div>
+  <div class="container site-header">
+    <div>
+      <div class="site-title">Kathleen Murphy</div>
+      <div class="site-subtitle">Metaphysical Wellness Specialist</div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#essays">Essays</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#newsletter">Newsletter</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero-inner">
+    <div class="hero-text">
+      <h1 class="hero-title">Gentle frameworks for a quieter, steadier life.</h1>
+      <p class="hero-lead">
+        Kathleen Murphy writes short, practical reflections on subtle energy,
+        grounded spirituality, and the art of coming home to yourself in
+        the middle of ordinary days.
+      </p>
+      <p class="hero-note">Selected essays · 2017–2019</p>
+    </div>
+    <aside class="hero-photo">
+      <div class="hero-photo-placeholder"></div>
+      <div>Photo placeholder</div>
+    </aside>
+  </div>
+</section>
+
+<main class="container">
+  <!-- ESSAYS -->
+  <section id="essays">
+    <h2>Essays</h2>
+    <p class="section-intro">
+      A small collection of essays on presence, boundaries, and metaphysical
+      self-care. Feel free to share them with anyone who might need a softer
+      way of moving through the world.
+    </p>
+
+    <ul class="essay-list">
+      <li class="essay-item">
+        <div class="essay-meta">May 2019 · Essay</div>
+        <div class="essay-title">
+          <a href="YOUR_ESSAY_LINK_HERE" target="_blank" rel="noopener">
+            The Space Between Thoughts
+          </a>
+          <span class="badge-external">Off-site</span>
+        </div>
+        <p class="essay-summary">
+          On the micro-moments between stimulus and response where real freedom
+          lives. A gentle exploration of how noticing the “in-between” can
+          soften anxiety, reduce reactivity, and reconnect you to your own
+          inner guidance.
+        </p>
+      </li>
+
+      <li class="essay-item">
+        <div class="essay-meta">October 2018 · Essay</div>
+        <div class="essay-title">
+          <a href="#essay-boundaries">Energetic Boundaries for Sensitive People</a>
+        </div>
+        <p class="essay-summary">
+          When you feel everything, how do you stay open without drowning?
+          Simple metaphysical practices for clearing, containing, and
+          re-charging your own energy so you can be kind without collapsing.
+        </p>
+      </li>
+
+      <li class="essay-item">
+        <div class="essay-meta">March 2018 · Essay</div>
+        <div class="essay-title">
+          <a href="#essay-morning">Small Morning Rituals, Big Subtle Shifts</a>
+        </div>
+        <p class="essay-summary">
+          Why you don’t need a perfect 5 a.m. routine to feel spiritually
+          “on track.” Three tiny, low-pressure morning rituals that can
+          quietly recalibrate your day toward steadiness and self-trust.
+        </p>
+      </li>
+
+      <li class="essay-item">
+        <div class="essay-meta">August 2017 · Essay</div>
+        <div class="essay-title">
+          <a href="#essay-breath">Listening to the Quiet Body</a>
+        </div>
+        <p class="essay-summary">
+          Learning to treat your body as a conversation rather than a
+          problem to fix. A slow walk through breath, posture, and the
+          subtle “yes/no” signals your body has been sending all along.
+        </p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- INLINE “FAKE” ESSAYS (SHORT) -->
+  <section id="essay-boundaries">
+    <h2>Energetic Boundaries for Sensitive People</h2>
+    <p class="section-intro">
+      A short excerpt from an October 2018 essay by Kathleen Murphy.
+    </p>
+    <p>
+      If you’ve ever walked into a room and felt tired before you’ve said
+      a single word, you already understand energetic boundaries. Your
+      system is reading the space long before your mind catches up.
+    </p>
+    <p>
+      Most highly sensitive people try to solve this by shrinking: avoiding
+      conflict, absorbing other people’s moods, and calling it “being kind.”
+      In reality, it’s often self-abandonment in spiritual clothing.
+    </p>
+    <p>
+      A true boundary doesn’t push anyone away. It simply says, “This is
+      my field, and I’ll tend to it with care.” From that place, you can
+      love people freely without letting their chaos set your nervous
+      system on fire.
+    </p>
+  </section>
+
+  <section id="essay-morning">
+    <h2>Small Morning Rituals, Big Subtle Shifts</h2>
+    <p class="section-intro">
+      From a March 2018 reflection on simple daily practices.
+    </p>
+    <p>
+      The internet will tell you that you need a 20-step morning routine
+      to become your “highest self.” What your soul usually wants is
+      something far quieter and more honest: one small anchor that says,
+      “I matter to myself today.”
+    </p>
+    <p>
+      One cup of tea sipped without your phone. One page in a notebook
+      where you tell the truth. One slow breath before you open your email.
+      These are not productivity hacks; they’re tiny acts of metaphysical
+      hygiene. They clear the static so your own inner voice can find
+      you again.
+    </p>
+  </section>
+
+  <section id="essay-breath">
+    <h2>Listening to the Quiet Body</h2>
+    <p class="section-intro">
+      From an August 2017 essay on body wisdom and gentle attention.
+    </p>
+    <p>
+      The body whispers long before it raises its voice. A tight jaw that
+      shows up every Sunday night. A flutter in the stomach when you say
+      “yes” but mean “no.” A sudden exhale when you finally tell the truth.
+    </p>
+    <p>
+      Metaphysical wellness starts with taking these tiny shifts seriously.
+      Not as medical diagnoses, but as spiritual post-it notes: “Something
+      here needs your kindness.” When you meet your body with curiosity
+      instead of criticism, it stops having to shout to be heard.
+    </p>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About Kathleen</h2>
+    <div class="about-grid">
+      <div class="about-col">
+        <p>
+          Kathleen Murphy is a metaphysical wellness specialist and writer
+          who blends grounded, everyday language with a deep respect for
+          subtle energy and spiritual practice. Her work is less about
+          “fixing” people and more about helping them remember what was
+          never broken.
+        </p>
+        <p>
+          Since 2017, Kathleen has shared short essays and talks on inner
+          alignment, compassionate boundaries, and the art of listening to
+          your own nervous system as a guide. Her approach is gentle,
+          practical, and quietly rebellious: no harsh self-improvement,
+          no spiritual performance, just honest tools for sensitive
+          humans living real lives.
+        </p>
+      </div>
+      <div class="about-col">
+        <p>
+          Off the page, Kathleen is a quiet observer, lover of old books,
+          and frequent walker of tree-lined city streets. Much of her work
+          is shaped by conversations with clients and friends who are
+          learning how to stay soft without losing themselves.
+        </p>
+        <p>
+          This site collects a small selection of her essays from
+          2017–2019. New work is announced first through her
+          low-volume email list.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section id="newsletter">
+    <h2>Letters from Kathleen</h2>
+    <p class="section-intro">
+      An occasional email with new essays and short reflections. No spam,
+      no algorithms, just a quiet note in your inbox a few times a year.
+    </p>
+
+    <div class="newsletter-box">
+      <!--
+        This form is just a placeholder for a 2019-style newsletter box.
+        If you use Mailchimp or similar, replace the form action + fields
+        with their embed code.
+      -->
+      <form action="#" method="post">
+        <label for="email">Email address</label>
+        <input id="email" type="email" name="email" placeholder="you@example.com">
+        <button type="submit">Join the list</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <div>© 2019 Kathleen Murphy. All rights reserved.</div>
+    <div>Last updated · May 2019</div>
+  </div>
+</footer>
+
+</body>
+</html>
